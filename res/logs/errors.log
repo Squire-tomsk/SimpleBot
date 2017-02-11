@@ -1,18 +1,46 @@
-2017-02-11 03:35:24,937 - Error:
+2017-02-11 16:28:19,296 - Controller error: 
 Traceback (most recent call last):
-  File "/Users/abuca/TelegramBots/SimpleBot/utils.py", line 31, in log_wrapper
+  File "/Users/abuca/TelegramBots/SimpleBot/service/utils.py", line 35, in log_wrapper
     handler(session, message)
-  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 44, in main_handler
-    text_request_handler(session, message)
-  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 59, in text_request_handler
-    raise KeyError('11')
-KeyError: '11'
-2017-02-11 03:36:39,821 - Controller error: 
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 58, in main_handler
+    wrong_command_handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 77, in wrong_command_handler
+    kb = build_main_menu_keyboard(session)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 85, in build_main_menu_keyboard
+    kb.add([telebot.types.KeyboardButton(text=btn_text),telebot.types.KeyboardButton(text=btn_text)])
+  File "/usr/local/lib/python3.5/site-packages/telebot/types.py", line 623, in add
+    row.append(button.to_dic())
+AttributeError: 'list' object has no attribute 'to_dic'
+2017-02-11 16:38:04,303 - Controller error: 
 Traceback (most recent call last):
-  File "/Users/abuca/TelegramBots/SimpleBot/utils.py", line 31, in log_wrapper
+  File "/Users/abuca/TelegramBots/SimpleBot/service/utils.py", line 35, in log_wrapper
     handler(session, message)
-  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 44, in main_handler
-    text_request_handler(session, message)
-  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 59, in text_request_handler
-    raise KeyError('11')
-KeyError: '11'
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 58, in main_handler
+    wrong_command_handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 77, in wrong_command_handler
+    kb = build_main_menu_keyboard(session)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 87, in build_main_menu_keyboard
+    telebot.types.KeyboardButton(text=picture_reqests[2*i+1]))
+IndexError: list index out of range
+2017-02-11 16:38:28,470 - Controller error: 
+Traceback (most recent call last):
+  File "/Users/abuca/TelegramBots/SimpleBot/service/utils.py", line 35, in log_wrapper
+    handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 58, in main_handler
+    wrong_command_handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 77, in wrong_command_handler
+    kb = build_main_menu_keyboard(session)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 87, in build_main_menu_keyboard
+    telebot.types.KeyboardButton(text=picture_reqests[2*i+1]))
+IndexError: list index out of range
+2017-02-11 16:39:49,841 - Controller error: 
+Traceback (most recent call last):
+  File "/Users/abuca/TelegramBots/SimpleBot/service/utils.py", line 35, in log_wrapper
+    handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 58, in main_handler
+    wrong_command_handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 77, in wrong_command_handler
+    kb = build_main_menu_keyboard(session)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 89, in build_main_menu_keyboard
+    kb.add(telebot.types.KeyboardButton(text=picture_reqests[2*i+1]))
+IndexError: list index out of range

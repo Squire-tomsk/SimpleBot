@@ -1,20 +1,29 @@
 {
-  "bot_picture_request": {
-    "en": "Get picture '{name}'"
-  },
   "welcome_message": {
     "en": "Welcome, please choose picture."
   },
   "wrong_command_message": {
     "en": "Wrong command. Please choose picture by embedded keyboard."
   },
-  "bot_message": {
+  "response_message": {
     "en": "This is message."
   },
-  "bot_message_request": {
+  "message_request": {
     "en": "Get message."
   },
   "error_message": {
     "en": "Ooops...something went wrong."
+  },
+  "picture_request_1": {
+    "en": "Get picture 1"
+  },
+  "picture_request_2": {
+    "en": "Get picture 2"
+  },
+  "picture_request_3": {
+    "en": "Get picture 3"
+  },
+  "picture_request_4": {
+    "en": "Get picture 4"
   }
 }
