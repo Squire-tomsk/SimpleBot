@@ -1,0 +1,20 @@
+{
+  "bot_picture_request": {
+    "en": "Get picture '{name}'"
+  },
+  "welcome_message": {
+    "en": "Welcome, please choose picture."
+  },
+  "wrong_command_message": {
+    "en": "Wrong command. Please choose picture by embedded keyboard."
+  },
+  "bot_message": {
+    "en": "This is message."
+  },
+  "bot_message_request": {
+    "en": "Get message."
+  },
+  "error_message": {
+    "en": "Ooops...something went wrong."
+  }
+}

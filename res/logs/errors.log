@@ -1,0 +1,18 @@
+2017-02-11 03:35:24,937 - Error:
+Traceback (most recent call last):
+  File "/Users/abuca/TelegramBots/SimpleBot/utils.py", line 31, in log_wrapper
+    handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 44, in main_handler
+    text_request_handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 59, in text_request_handler
+    raise KeyError('11')
+KeyError: '11'
+2017-02-11 03:36:39,821 - Controller error: 
+Traceback (most recent call last):
+  File "/Users/abuca/TelegramBots/SimpleBot/utils.py", line 31, in log_wrapper
+    handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 44, in main_handler
+    text_request_handler(session, message)
+  File "/Users/abuca/TelegramBots/SimpleBot/controller.py", line 59, in text_request_handler
+    raise KeyError('11')
+KeyError: '11'
