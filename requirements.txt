@@ -1,0 +1,7 @@
+botlab==0.2.4
+pyTelegramBotAPI==2.3.0
+pymongo==3.4.0
+telebot==0.0.3
+
+
+
