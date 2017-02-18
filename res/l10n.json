@@ -5,7 +5,7 @@
   "wrong_command_message": {
     "en": "Wrong command. Please choose picture by embedded keyboard."
   },
-  "response_message": {
+  "message_response": {
     "en": "This is message."
   },
   "message_request": {

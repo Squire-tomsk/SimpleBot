@@ -72,7 +72,7 @@ def picture_request_handler(session, message):
 
 
 def text_request_handler(session, message):
-    session.reply_message(session._("response_message"))
+    session.reply_message(session._("message_response"))
 
 
 def wrong_command_handler(session, message):
