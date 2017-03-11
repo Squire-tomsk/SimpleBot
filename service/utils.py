@@ -35,8 +35,6 @@ def error_log_decorator(handler):
             handler(session, message)
         except:
             logging.exception(msg='Controller error: ', exc_info=sys.exc_info())
-            session.reply_message(session._("error_message"))
-
     return log_wrapper
 
 

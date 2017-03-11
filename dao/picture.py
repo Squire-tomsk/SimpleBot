@@ -7,6 +7,7 @@ from service import utils
 class PictureDAO:
     PICTURES_COLLECTION = 'pictures'
     PICTURES_DIRECTORY_PATH = SETTINGS['bot_path'] + '/res/pictures'
+    PICTURES_MESSAGES_DIRECTORY_PATH = SETTINGS['bot_path'] + '/res/messages'
     PICTURE_EXTENSIONS = ['jpg', 'png']
 
     def __init__(self):
@@ -56,6 +57,11 @@ class PictureDAO:
             picture_info['name'] = name
             picture_info['hash'] = self._hash(picture_info['name'])
             picture_info['file_id'] = ''
+            picture_info['message'] = ''
+            if os.path.isfile(self.PICTURES_MESSAGES_DIRECTORY_PATH + '/' + name):
+                file = open(self.PICTURES_MESSAGES_DIRECTORY_PATH + '/' + name, 'r')
+                for line in file.readlines():
+                    picture_info['message'] += line
             return self._collection().set_object(picture_info,
                                                  filter_options={'name': picture_info['name']})
 
@@ -71,6 +77,10 @@ class PictureDAO:
             return open(self._get_path(name), 'rb')
         else:
             return picture_info['file_id']
+
+    def get_picture_message(self, name):
+        picture_info = self.get_picture_info(name)
+        return picture_info['message']
 
     def get_picture_info(self, name):
         picture_info = self._collection().get_object(filter_options={'name': name})

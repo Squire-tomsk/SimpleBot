@@ -1,29 +1,59 @@
 {
   "welcome_message": {
-    "en": "Welcome, please choose picture."
+    "ru": "welcome_message"
   },
-  "wrong_command_message": {
-    "en": "Wrong command. Please choose picture by embedded keyboard."
+  "default_message": {
+    "ru": "default_message"
   },
-  "message_response": {
-    "en": "This is message."
+  "selection_message": {
+    "ru": "selection_message"
   },
-  "message_request": {
-    "en": "Get message."
+  "anybots_message": {
+    "ru": "anybots_message"
   },
-  "error_message": {
-    "en": "Ooops...something went wrong."
+  "tire_button": {
+    "ru": "🖲 Шиномонтаж"
+  },
+  "info_button": {
+    "ru": "❓ИНФО"
+  },
+  "price_button": {
+    "ru": "🚿 Скачать прайс мойки"
+  },
+  "back_button": {
+    "ru": "🔙 Назад"
   },
   "picture_request_1": {
-    "en": "Get picture 1"
+    "ru": "🚗 Мойка стандарт комплекс"
   },
   "picture_request_2": {
-    "en": "Get picture 2"
+    "ru": "🚙 Наружная мойка"
   },
-  "picture_request_3": {
-    "en": "Get picture 3"
+  "picture_request_b": {
+    "ru": "3️⃣✖️фазная бережная мойка автомобиля"
   },
   "picture_request_4": {
-    "en": "Get picture 4"
+    "ru": "⏱ Экспресс мойка"
+  },
+  "picture_request_5": {
+    "ru": "🕳 Мойка днища"
+  },
+  "picture_request_6": {
+    "ru": "Химчистка салона-обработка"
+  },
+  "picture_request_7": {
+    "ru": "🗺 Нано-покрытие стекол"
+  },
+  "picture_request_8": {
+    "ru": "💧 Покрытие жидкое стекло"
+  },
+  "picture_request_9": {
+    "ru": "🚿 DETAILING WASHING"
+  },
+  "picture_request_a": {
+    "ru": "💠 VIP мойка"
+  },
+  "picture_request_3": {
+    "ru": "🏎 Мойка двигателя"
   }
 }
